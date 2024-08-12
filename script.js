@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function displayForecast(data) {
         forecastSection.innerHTML = '<h2>5-Day Forecast:</h2>';
-        for (let i = 0; i < data.list.length; i += 8) { // Adjusting the step to get daily data
+        for (let i = 0; i < data.list.length; i += 8) { 
             const { dt, weather, main, wind } = data.list[i];
             const date = new Date(dt * 1000);
             forecastSection.innerHTML += `
